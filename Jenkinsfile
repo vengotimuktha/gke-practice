@@ -3,10 +3,10 @@ pipeline {
 
     environment {
         GOOGLE_APPLICATION_CREDENTIALS = credentials('gcp-service-account') // Ensure service account JSON is available
-        GKE_CLUSTER_NAME = 'jenkinscluster' // Update with your GKE cluster name
-        GKE_PROJECT_ID = 'rock-position-455809-m2' // Update with your GCP project ID
+        GKE_CLUSTER_NAME = 'kuber-cluster' // Update with your GKE cluster name
+        GKE_PROJECT_ID = 'devops-practice-474016' // Update with your GCP project ID
         GKE_ZONE = 'us-central1' // Update with your GKE cluster zone
-        GIT_REPO_URL = 'https://github.com/AneilRapole/k8-s-ci-cd.git' // Update with your Git repository URL
+        GIT_REPO_URL = 'https://github.com/vengotimuktha/gke-practice.git' // Update with your Git repository URL
         GIT_BRANCH = 'main' // Update with your branch name if needed (default is 'main')
     }
 
